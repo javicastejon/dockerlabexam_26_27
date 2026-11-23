@@ -658,19 +658,26 @@ Debes entregar el proyecto completo.
 La estructura final será similar a:
 
 ```text
-taskmanager/
+dockerlabexam_26_27/
+├── README.md
+├── docker-compose.yaml
+├── .gitignore
+│
 ├── backend/
 │   ├── Dockerfile
 │   ├── pom.xml
 │   └── src/
+│       ├── main/
+│       │   ├── java/
+│       │   └── resources/
+│       └── test/
+│           └── java/
 │
-├── frontend/
-│   ├── Dockerfile
-│   ├── nginx.conf
-│   └── web/
-│
-├── docker-compose.yaml
-└── evidencias.pdf
+└── frontend/
+    ├── Dockerfile
+    ├── nginx.conf
+    └── web/
+        └── index.html
 ```
 
 ---
