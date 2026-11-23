@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskManager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <p class="eyebrow">Docker Deployment Lab</p>
+            <h1>TaskManager</h1>
+            <p class="subtitle">Aplicación de ejemplo desplegada con Docker</p>
+        </header>
+
+        <section class="status-card">
+            <div>
+                <span class="label">Backend</span>
+                <strong id="backend-status">Comprobando...</strong>
+            </div>
+            <div>
+                <span class="label">Base de datos</span>
+                <strong id="database-status">Comprobando...</strong>
+            </div>
+        </section>
+
+        <section class="tasks-card">
+            <div class="section-header">
+                <h2>Tareas</h2>
+                <button id="reload-button" type="button">Actualizar</button>
+            </div>
+
+            <p id="message" class="message"></p>
+            <ul id="task-list" class="task-list"></ul>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

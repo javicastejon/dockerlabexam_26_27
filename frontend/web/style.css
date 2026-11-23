@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+}
+
+.container {
+    width: min(760px, calc(100% - 32px));
+    margin: 48px auto;
+}
+
+header {
+    margin-bottom: 28px;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    margin-top: 8px;
+    color: #6b7280;
+}
+
+.status-card,
+.tasks-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.status-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.status-card div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.label {
+    color: #6b7280;
+    font-size: 0.85rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-header h2 {
+    margin: 0;
+}
+
+button {
+    border: 0;
+    border-radius: 8px;
+    padding: 9px 14px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.task-list {
+    padding: 0;
+    margin: 20px 0 0;
+    list-style: none;
+}
+
+.task {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.task:last-child {
+    border-bottom: 0;
+}
+
+.task.completed {
+    color: #6b7280;
+    text-decoration: line-through;
+}
+
+.task-state {
+    width: 24px;
+    font-weight: 700;
+}
+
+.message {
+    color: #6b7280;
+}

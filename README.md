@@ -298,7 +298,7 @@ Debes utilizar la imagen:
 mysql:8.4
 ```
 
-La base de datos utilizará la siguiente configuración:
+La base de datos utilizará la siguiente configuración (variables de entorno):
 
 ```text
 Base de datos: taskmanager
